@@ -1,0 +1,43 @@
+name: Setup and coverage badge
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Packages
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+  test-and-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Packages
+        run: npm install
+
+      - name: Run Tests with Coverage
+        run: npm test -- --coverage
+
+      - name: List coverage directory
+        run: ls -la coverage
+
+      - name: Upload Coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+

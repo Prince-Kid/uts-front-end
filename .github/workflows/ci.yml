@@ -1,0 +1,28 @@
+name: Continous Integration
+
+on:
+ workflow_dispatch:
+ push:
+  branches-ignore:
+   - develop
+
+jobs:
+ Build:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v3
+
+   - name: Install Packages
+     run: npm install
+   - name: Build
+     run: npm run build
+
+ Test:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v3
+
+   - name: Install Packages
+     run: npm install
+   - name: Run tests
+     run: npm run test --if-present

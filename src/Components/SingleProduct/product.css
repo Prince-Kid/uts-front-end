@@ -1,0 +1,12 @@
+@media (min-width: 600px) and (max-width: 800px) {
+    .flex-container {
+      flex-wrap: wrap;
+    }
+}
+.filter-red {
+  filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(118%);
+}
+
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
