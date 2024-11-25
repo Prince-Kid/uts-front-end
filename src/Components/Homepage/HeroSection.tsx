@@ -4,7 +4,7 @@ import { RootState, AppDispatch } from "../../Redux/store";
 import { useTranslation } from "react-i18next";
 import { fetchImages } from "../../Redux/HomePage/ProductsImagesSlice";
 import Skeleton from "react-loading-skeleton";
-
+import logo from "../../asset/WhatsApp_Image_2024-10-22_at_11.12.54-removebg.png";
 const HeroSection: React.FC = () => {
   const dispatch: AppDispatch = useDispatch();
   // const { images, loading, error } = useSelector(
@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
   // );
 
   const images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1I6o-v_uhGbt1YB0OryEVp2LAtSvUQe30Og&s",
+    "https://perfectemall.com/wp-content/uploads/2024/09/2024090916340569-300x300.jpg",
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

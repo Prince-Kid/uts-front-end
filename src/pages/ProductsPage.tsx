@@ -58,63 +58,18 @@ const Products = () => {
   const categories = [
     {
       id: "001",
-      label: t("Electronics"),
-      value: "Electronics",
+      label: t("Men's Clothes"),
+      value: "men",
     },
     {
       id: "002",
-      label: t("Food"),
-      value: "Food",
+      label: t("Women's Clothes"),
+      value: "women",
     },
     {
       id: "003",
-      label: t("Fruits"),
-      value: "Fruits",
-    },
-    {
-      id: "004",
-      label: t("Mechanism"),
-      value: "Mechanism",
-    },
-    {
-      id: "005",
-      label: t("Sport Kit"),
-      value: "Sport Kit",
-    },
-    {
-      id: "006",
-      label: t("Clothing"),
-      value: "Clothing",
-    },
-    {
-      id: "007",
-      label: t("Books"),
-      value: "Books",
-    },
-    {
-      id: "008",
-      label: t("Furniture"),
-      value: "Furniture",
-    },
-    {
-      id: "009",
-      label: t("Toys"),
-      value: "Toys",
-    },
-    {
-      id: "010",
-      label: t("Stationery"),
-      value: "Stationery",
-    },
-    {
-      id: "011",
-      label: t("Cars"),
-      value: "Cars",
-    },
-    {
-      id: "012",
-      label: t("Shoes"),
-      value: "Shoes",
+      label: t("Kid's Clothes"),
+      value: "kids",
     },
   ];
 
